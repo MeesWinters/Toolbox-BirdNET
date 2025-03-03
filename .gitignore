@@ -1,0 +1,4 @@
+Toolbox_venv/**
+BirdNET\-Analyzer/**
+.idea/**
+__pycache__
