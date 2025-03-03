@@ -1,6 +1,6 @@
 
 # De Bio-Informatica Toolbox
-Mees Winters | 436369 | 20245-2025
+Mees Winters | 436369 | 20245-2025 | Versie 0.1
 ___
 
 ### About
@@ -29,3 +29,15 @@ Installeer alle nodige python packages
 
 Test BirNET-Analyzer
 >python -m BirdNET-Analyzer/birdnet_analyzer.analyze
+
+___
+
+### Support
+
+Voor verdere hulp bij installatie van BirdNET-analyzer de github repository geraadpleegd worden. Hier is o.a. een installatie guide te vinden
+
+https://github.com/kahst/BirdNET-Analyzer
+
+Voor vragen over gebruik van de website kunnen vragen gesteld worden via
+
+***m.a.winters@st.hanze.nl***
