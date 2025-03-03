@@ -11,31 +11,21 @@ Met de website kan een geluidsopname geanalyseerd worden en word een overzicht g
 ### installatie
 
 Voor installatie worden twee git repositories gebuikt. Installeer eerst de GUI met:
-
 > git clone https://github.com/MeesWinters/Toolbox_birdNET.git
->
 
 move in de folder
-
 > cd Toolbox_birdNET
-> 
 
 Installeer in de deze folder BirdNet-analyzer
-
 > git clone https://github.com/kahst/BirdNET-Analyzer.git
+
+Maak een virtual environment en activeer deze (optioneel)
+> python -m venv /path/naar/venv
 > 
+> source /path/naar/venv
 
-Activeer de venv 
-
-> source Toolbox_venv/bin/activate
-> 
- 
-Test of de BirdNET-Analyzer werkt
-
-> python -m BirdNET-Analyzer/birdnet_analyzer.analyze
-
-Mocht dit nog niet werken, download dan alle dependicies opnieuw
+Installeer alle nodige python packages
 > pip install -r Birdnet-Analyzer/requirements.txt
 
-
-
+Test BirNET-Analyzer
+>python -m BirdNET-Analyzer/birdnet_analyzer.analyze
