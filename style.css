@@ -1,0 +1,53 @@
+body {
+    background-color: #b4d5f0;
+}
+
+/* ---------- Header components ---------- */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+    width: 33.33%;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+li a:hover{
+    background-color: orange;
+}
+
+/* ---------- Form components ---------- */
+
+form{
+    display: box;
+    margin-top: 20%;
+    margin-left: 33%;
+}
+
+input {
+    margin-bottom: 2%;
+    color: grey;
+}
+
+/* ---------- Divs ---------- */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: auto;
+    margin-top: 5%;
+    height: 80%;
+}
