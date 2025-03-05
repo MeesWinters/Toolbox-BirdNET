@@ -1,12 +1,14 @@
 
 # De Bio-Informatica Toolbox
-Mees Winters | 436369 | 20245-2025 | Versie 0.1
+Mees Winters | 436369 | 2024-2025 | Versie 0.1
 ___
 
 ### About
 Birdnet analyzer is een tensorflow model getraind om vogelzang te herkennen. 
-Normaal is deze tool te gebruiken. Deze website is gemaakt als gebruiksvriendelijker alternatief voor de command line tool.
+Normaal is deze tool te gebruiken via de command line. Deze website is gemaakt als gebruiksvriendelijker alternatief voor de command line tool.
 Met de website kan een geluidsopname geanalyseerd worden en word een overzicht gegeven. Voor gebruik van de website zie de ***use*** pagina op de website.
+
+___
 
 ### installatie
 

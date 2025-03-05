@@ -11,19 +11,18 @@
     <li><a href="howto.html">HOW TO</a></li>
     <li><a href="about.html">ABOUT</a></li>
 </ul>
-<br />
 
-
+<div class="form">
 <form>
     <input type="file"> <br />
-    <input type="text" onfocus="this.value=''" value="1-52 "> week         <br />
-    <input type="text" onfocus="this.value=''" value="0-360"> lengtegraad  <br />
-    <input type="text" onfocus="this.value=''" value="0-360"> breedtegraad <br />
-    <input type="text" onfocus="this.value=''" value="0-100"> gevoeligheid <br />
-    <input type="text" onfocus="this.value=''" value="0-100"> zekerheid    <br />
+    <input type="date" onfocus="this.value=''"> week         <br />
+    <input type="number" min="0" max="360" step="0.01" onfocus="this.value=''" value="360">  lengtegraad  <br />
+    <input type="number" min="0" max="360" step="0.01" onfocus="this.value=''" value="360">  breedtegraad <br />
+    <input type="number" min="0" max="50 " step="1"    onfocus="this.value=''" value="50">   gevoeligheid <br />
+    <input type="number" min="0" max="1  " step="0.01" onfocus="this.value=''" value="1.00"> zekerheid    <br />
     <input type="submit" value="run">
 </form>
-
+</div>
 </body>
 
 </html>

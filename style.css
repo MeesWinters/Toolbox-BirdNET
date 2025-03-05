@@ -1,38 +1,45 @@
 body {
-    background-color: #b4d5f0;
+    background-color: #9ca3af;
 }
 
 /* ---------- Header components ---------- */
 
 ul {
+    position: sticky;
+    top: 0;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li{
+li {
     float: left;
     width: 33.33%;
 }
 
 li a {
+    transition-duration: 0.4s;
     display: block;
-    padding: 8px;
-    background-color: whitesmoke;
+    padding: 8%;
+    background-color: #5c6370;
     cursor: pointer;
+    text-align: center;
+    border-radius: 1%;
 }
 
-li a:hover{
+li a:hover {
     background-color: orange;
+    border-radius: 10%;
 }
 
 /* ---------- Form components ---------- */
 
-form{
-    display: box;
-    margin-top: 20%;
+form {
+    position: relative;
+    display: block;
     margin-left: 33%;
+    top: 50%;
 }
 
 input {
@@ -40,14 +47,30 @@ input {
     color: grey;
 }
 
+input:onfocus {
+    color: black;
+}
+
+/* ---------- text ---------- */
+
+h1 {
+    margin-left: 3%;
+    font-family: "Arial Narrow";
+}
+
+h2 {
+    margin-left: 3%;
+    font-family: "Arial Narrow";
+}
+
+p {
+    margin-left:  5%;
+    margin-right: 5%;
+    font-family: "Arial Narrow";
+}
+
 /* ---------- Divs ---------- */
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    margin-bottom: auto;
-    margin-top: 5%;
-    height: 80%;
+.form {
+    height: 50%;
 }
