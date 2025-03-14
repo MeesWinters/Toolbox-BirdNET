@@ -1,15 +1,15 @@
 <doctype html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>BirdNET: about</title>
+    <link rel="stylesheet" href={{url_for('static', filename="style.css")}}>
+    <title>about</title>
 </head>
 
 <body>
 <ul>
-    <li><a href="frontpage.html">USE</a></li>
-    <li><a href="howto.html">HOW TO</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="{{url_for('use')}}">USE</a></li>
+    <li><a href="{{url_for('how_to')}}">HOW TO</a></li>
+    <li><a href="{{url_for('about')}}">ABOUT</a></li>
 </ul>
 
 <H1> About </H1>
