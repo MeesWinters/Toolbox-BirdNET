@@ -24,13 +24,19 @@ Installeer in de deze folder BirdNet-analyzer
 Maak een virtual environment en activeer deze (optioneel)
 > python -m venv /path/naar/venv
 > 
-> source /path/naar/venv
+> source /path/naar/venv/bin/activate
 
 Installeer alle nodige python packages
 > pip install -r Birdnet-Analyzer/requirements.txt
 
 Test BirNET-Analyzer
 >python -m BirdNET-Analyzer/birdnet_analyzer.analyze
+
+Installeer Flask 
+>pip install flask 
+
+run de webstite
+> flask --app app run
 
 ___
 
