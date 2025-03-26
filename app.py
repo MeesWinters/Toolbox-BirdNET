@@ -1,11 +1,17 @@
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template, request
 from werkzeug.utils import secure_filename
+
+
+from inputprocess import analyze, emptydir
+
 
 upload_folder = "static/files"
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'supersecretkey'
 app.config["UPLOAD_FOLDER"] = upload_folder
+
+
 
 @app.route("/", methods=['POST', 'GET'])
 def use():
@@ -14,17 +20,18 @@ def use():
 
     elif request.method == "POST":
 
+        emptydir()
+
         f = request.files['file']
-        f.save("static/files/" + secure_filename(f.filename))
+        filepath = "static/files/" + secure_filename(f.filename)
+        f.save(filepath)
 
-        kwargs = {
-            'lengtegraad':  request.form['lengtegraad'],
-            'breedtegraad': request.form['breedtegraad'],
-            'gevoeligheid': request.form['gevoeligheid'],
-            'zekerheid': request.form['zekerheid'],
-        }
+        a = analyze(filepath)
+        analyze.graph(a)
 
-        return render_template("post.html", **kwargs)
+        emptydir()
+
+        return render_template("post.html")
 
 @app.route("/howto.html")
 def how_to():

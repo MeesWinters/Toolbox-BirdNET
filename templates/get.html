@@ -14,12 +14,12 @@
 
 <div class="form">
 <form method="POST" enctype="multipart/form-data">
-    <input type="file" name="file"> <br />
-    <input type="date" onfocus="this.value=''"> week         <br />
-    <input type="number" min="0" max="360" step="0.01" onfocus="this.value=''" value="360"  name="lengtegraad" >  lengtegraad  <br />
-    <input type="number" min="0" max="360" step="0.01" onfocus="this.value=''" value="360"  name="breedtegraad">  breedtegraad <br />
-    <input type="number" min="0" max="50 " step="1"    onfocus="this.value=''" value="50"   name="gevoeligheid">  gevoeligheid <br />
-    <input type="number" min="0" max="1  " step="0.01" onfocus="this.value=''" value="1.00" name="zekerheid"   >  zekerheid    <br />
+    <input type="file" name="file" required> <br />
+    <input type="number" min="0" max="48"  step="1"    onfocus="this.value=''" name="week"        >  week         <br />
+    <input type="number" min="0" max="360" step="0.01" onfocus="this.value=''" name="lengtegraad" >  lengtegraad  <br />
+    <input type="number" min="0" max="360" step="0.01" onfocus="this.value=''" name="breedtegraad">  breedtegraad <br />
+    <input type="number" min="0" max="50 " step="1"    onfocus="this.value=''" name="gevoeligheid">  gevoeligheid <br />
+    <input type="number" min="0" max="1"   step="0.01" onfocus="this.value=''" name="zekerheid"   >  zekerheid    <br />
     <button type="submit" name="submit">submit</button>
 </form>
 </div>
