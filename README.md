@@ -1,6 +1,6 @@
 
 # De Bio-Informatica Toolbox
-Mees Winters | 436369 | 2024-2025 | Versie 0.1
+Mees Winters | 436369 | 2024-2025 | Versie 1.0
 ___
 
 ### About
@@ -21,19 +21,18 @@ move in de folder
 Installeer in de deze folder BirdNet-analyzer
 > git clone https://github.com/kahst/BirdNET-Analyzer.git
 
-Maak een virtual environment en activeer deze (optioneel)
+Maak een virtual environment en activeer deze (optioneel) 
 > python -m venv /path/naar/venv
 > 
 > source /path/naar/venv/bin/activate
 
 Installeer alle nodige python packages
-> pip install -r Birdnet-Analyzer/requirements.txt
+> pip install -r Birdnet-Analyzer/requirements.txt 
+> 
+> pip install -r Toolbox/requirements.txt
 
 Test BirNET-Analyzer
 >python -m BirdNET-Analyzer/birdnet_analyzer.analyze
-
-Installeer Flask 
->pip install flask 
 
 run de webstite
 > flask --app app run

@@ -1,48 +1,65 @@
 body {
-    background-color: #9ca3af;
+    background-color: whitesmoke;
+    margin: 1px;
 }
+
 
 /* ---------- Header components ---------- */
 
-ul {
+
+.flex-header {
+    display: flex;
+    justify-content: space-evenly;
     position: sticky;
-    top: 0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+    top: ;
 
-li {
-    float: left;
-    width: 33.33%;
-}
+    outline: 1px black solid;
+    background-color: #f8f7ff;
+    margin: 1%;
+    }
 
-li a {
+.flex-header > header-sub {
+
+    margin: 0.5%;
+    padding: 2%;
+    background-color: #fcf6f6;
+    width: 15%;
+
+    outline: 1px black solid;
+    border-radius: 5%;
     transition-duration: 0.4s;
-    display: block;
-    padding: 8%;
-    background-color: #5c6370;
     cursor: pointer;
     text-align: center;
-    border-radius: 1%;
 }
 
-li a:hover {
+header-sub:hover {
     background-color: orange;
     border-radius: 10%;
 }
 
+a {
+    color: black;
+    font-family: "Cabin Sketch", cursive
+
+}
+
+
 /* ---------- Form components ---------- */
 
-form {
-    position: relative;
-    display: block;
-    margin-left: 33%;
-    top: 50%;
+
+.flex-form {
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 1%;
+    padding: 2%;
+    background-color: white;
+    outline: 1px black solid;
 }
 
 input {
+    margin-top: 1px;
     margin-bottom: 2%;
     color: black;
 }
@@ -51,26 +68,69 @@ input:onfocus {
     color: black;
 }
 
-/* ---------- text ---------- */
 
-h1 {
-    margin-left: 3%;
-    font-family: "Arial Narrow";
+/* ---------- Text components ---------- */
+
+.text-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-h2 {
-    margin-left: 3%;
-    font-family: "Arial Narrow";
+.text-box {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ffebf8;
+    margin: 1%;
+    padding: 2%;
+    outline: 1px solid black;
 }
 
-p {
-    margin-left:  5%;
-    margin-right: 5%;
-    font-family: "Arial Narrow";
+.text-box > h1 {
+    font-family: -apple-system;
+    margin: 1%;
+    padding: 1%;
 }
 
-/* ---------- Divs ---------- */
+.text-box > p {
+    font-family: "Cambria Math"
+}
 
-.form {
-    height: 50%;
+
+/* ---------- result components ---------- */
+
+.segmenten {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin: 1%;
+    border: 1px solid black;
+    padding: 3%;
+
+    background-color: #fff9fc;
+}
+
+
+.graph-table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+
+}
+
+img {
+    margin: 2%;
+    border: 1px solid black;
+}
+
+td{
+    margin: 2px;
 }

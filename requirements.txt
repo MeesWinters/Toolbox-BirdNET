@@ -1,4 +1,5 @@
 flask
 flask-WTF
 bootstrap-flask
-
+pydub
+matplotlib

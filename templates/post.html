@@ -1,17 +1,51 @@
 <doctype html>
 <html>
-<head>
-    <link rel="stylesheet" href={{url_for('static', filename="style.css")}}>
-    <title>use</title>
-</head>
+    <head>
+        <link rel="stylesheet" href={{url_for('static', filename="style.css")}}>
+        <title>use</title>
+    </head>
 
-<body>
-<ul>
-    <li><a href="{{url_for('use')}}">USE</a></li>
-    <li><a href="{{url_for('how_to')}}">HOW TO</a></li>
-    <li><a href="{{url_for('about')}}">ABOUT</a></li>
-</ul>
+    <body>
+        <div class="flex-header">
+            <header-sub><a href="{{url_for('use')}}">USE</a></header-sub>
+            <header-sub><a href="{{url_for('how_to')}}">HOW TO</a></header-sub>
+            <header-sub><a href="{{url_for('about')}}">ABOUT</a></header-sub>
+        </div>
 
-</body>
+
+        <div class="graph-table">
+            <div class="images">
+                <img src="static/files/piechart.png" width="640" height="480" alt="piechart">
+                <img src="static/files/barchart.png" width="640" height="480" alt="barchart">
+            </div>
+
+
+            <div class="segmenten">
+                <table>
+
+                    <tr>
+                        <th> Species </th>
+                        <th> Start </th>
+                        <th> End </th>
+                        <th> Confidence </th>
+                        <th> Audio </th>
+                    </tr>
+                    {% for i in segments %}
+                        <tr>
+                            <td> {{segments[i].species}} </td>
+                            <td> {{segments[i].start}} </td>
+                            <td> {{segments[i].end}} </td>
+                            <td> {{segments[i].confidence}} </td>
+                            <td>
+                                <audio controls>
+                                <source src={{i}} type="audio/mpeg">
+                                </audio>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </body>
 
 </html>

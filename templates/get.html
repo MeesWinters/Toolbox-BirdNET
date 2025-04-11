@@ -1,28 +1,29 @@
 <doctype html>
 <html>
-<head>
-    <link rel="stylesheet" href={{url_for('static', filename="style.css")}}>
-    <title>use</title>
-</head>
+    <head>
+        <link rel="stylesheet" href={{url_for('static', filename="style.css")}}>
+        <title>use</title>
+    </head>
 
-<body>
-<ul>
-    <li><a href="{{url_for('use')}}">USE</a></li>
-    <li><a href="{{url_for('how_to')}}">HOW TO</a></li>
-    <li><a href="{{url_for('about')}}">ABOUT</a></li>
-</ul>
+    <body>
+        <div class="flex-header">
+            <header-sub><a href="{{url_for('use')}}">USE</a></header-sub>
+            <header-sub><a href="{{url_for('how_to')}}">HOW TO</a></header-sub>
+            <header-sub><a href="{{url_for('about')}}">ABOUT</a></header-sub>
+        </div>
 
-<div class="form">
-<form method="POST" enctype="multipart/form-data">
-    <input type="file" name="file" required> <br />
-    <input type="number" min="0" max="48"  step="1"    onfocus="this.value=''" name="week"        >  week         <br />
-    <input type="number" min="0" max="360" step="0.01" onfocus="this.value=''" name="lengtegraad" >  lengtegraad  <br />
-    <input type="number" min="0" max="360" step="0.01" onfocus="this.value=''" name="breedtegraad">  breedtegraad <br />
-    <input type="number" min="0" max="50 " step="1"    onfocus="this.value=''" name="gevoeligheid">  gevoeligheid <br />
-    <input type="number" min="0" max="1"   step="0.01" onfocus="this.value=''" name="zekerheid"   >  zekerheid    <br />
-    <button type="submit" name="submit">submit</button>
-</form>
-</div>
-</body>
 
+        <form method="POST" enctype="multipart/form-data" class="flex-form">
+
+                        <input type="file" name="file" required
+                               accept="audio/wav, audio/mp3" />
+            week        <input type="number" min="0"    max="48"   step="1"    onfocus="this.value=''" name="week"        >
+            lengtegraad <input type="number" min="-180" max="180"   step="1"    onfocus="this.value=''" name="lengtegraad" >
+            breedtegraad<input type="number" min="-180" max="180"   step="1"    onfocus="this.value=''" name="breedtegraad">
+            gevoeligheid<input type="number" min="0.75" max="1.25" step="0.01" onfocus="this.value=''" name="gevoeligheid">
+            zekerheid   <input type="number" min="0"    max="1"    step="0.01" onfocus="this.value=''" name="zekerheid"   >
+
+            <button type="submit" name="submit">submit</button>
+        </form>
+    </body>
 </html>

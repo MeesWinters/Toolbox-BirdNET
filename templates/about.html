@@ -1,25 +1,45 @@
 <doctype html>
 <html>
-<head>
-    <link rel="stylesheet" href={{url_for('static', filename="style.css")}}>
-    <title>about</title>
-</head>
+    <head>
+        <link rel="stylesheet" href={{url_for('static', filename="style.css")}}>
+        <title>about</title>
+    </head>
 
-<body>
-<ul>
-    <li><a href="{{url_for('use')}}">USE</a></li>
-    <li><a href="{{url_for('how_to')}}">HOW TO</a></li>
-    <li><a href="{{url_for('about')}}">ABOUT</a></li>
-</ul>
+    <body>
+        <div class="flex-header">
+            <header-sub><a href="{{url_for('use')}}">USE</a></header-sub>
+            <header-sub><a href="{{url_for('how_to')}}">HOW TO</a></header-sub>
+            <header-sub><a href="{{url_for('about')}}">ABOUT</a></header-sub>
+        </div>
 
-<H1> About </H1>
-<p> Birdnet analyzer is een tensorflow model getraind om vogelzang te herkennen.
-    Normaal is deze tool te gebruiken via de command line.
-    Deze website is gemaakt als gebruiksvriendelijker alternatief voor de command line tool.
-    Met de website kan een geluidsopname geanalyseerd worden en word een overzicht gegeven.
-    Voor gebruik van de website zie de use pagina op de website. </p>
+        <div class="text-box">
+
+            <h1> About </h1>
+            <p>
+            Birdnet analyzer is een tensorflow model getraind om vogelzang te herkennen.
+            Normaal is deze tool te gebruiken via de command line.
+            Deze website is gemaakt als gebruiksvriendelijker alternatief voor de command line tool.
+            Met de website kan een geluidsopname geanalyseerd worden en word een overzicht gegeven.
+            Voor gebruik van de website zie de use pagina op de website.
+            </p>
+
+        </div>
+        <div class="text-box">
 
 
+            <h1> BirdNET Analyzer</h1>
+            <p>
+                title = BirdNET: A deep learning solution for avian diversity monitoring, <br>
+                author = Kahl, Stefan and Wood, Connor M and Eibl, Maximilian and Klinck, Holger <br>
+                journal = Ecological Informatics, <br>
+                volume = 61 <br>
+                pages = 101236 <br>
+                year = 2021 <br>
+                publisher = Elsevier <br>
+                <a href="url">https://birdnet.cornell.edu/</a>
+            </p>
+        </div>
 
-</body>
+
+    </body>
 </html>
